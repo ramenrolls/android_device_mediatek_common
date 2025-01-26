@@ -27,6 +27,9 @@ PRODUCT_USES_MTK_HARDWARE := true
 # Logtag
 include $(MTK_COMMON_PATH)/logtag.mk
 
+# Properties
+TARGET_SYSTEM_PROP += $(MTK_COMMON_PATH)/system/common/system.prop
+
 # IRQ Balancer
 PRODUCT_PACKAGES += rebalance_interrupts-vendor
 
